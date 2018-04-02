@@ -1050,7 +1050,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1159885725}
   m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 7.8, y: 0, z: 0.19}
+  m_LocalPosition: {x: 6.73, y: 0, z: -1.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1691440486}
@@ -1194,8 +1194,8 @@ GameObject:
   - component: {fileID: 1453319110}
   - component: {fileID: 1453319109}
   - component: {fileID: 1453319108}
-  - component: {fileID: 1453319112}
   - component: {fileID: 1453319113}
+  - component: {fileID: 1453319112}
   m_Layer: 0
   m_Name: bottom
   m_TagString: Untagged
@@ -1291,7 +1291,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1453319106}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c588ae6bf867c214a9d194c6df12b7bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 44e7d94ff94dd9c408d8f82e04c524cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!54 &1453319113
@@ -1823,7 +1823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bola: {fileID: 1372159316}
-  speed: 10
+  speed: 20
   force: {x: 200, y: 0, z: -100}
 --- !u!1 &2118017938
 GameObject:
