@@ -6,17 +6,19 @@ public class Player : MonoBehaviour
 {
 
     public int speed;
+    private Rigidbody rb;
     // Use this for initialization
     public Vector3 force;
     private int power;
     void Start()
     {
-
+        rb= GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        rb.velocity=Vector3.zero;
         if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(Vector3.left * Time.deltaTime * speed);

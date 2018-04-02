@@ -12,12 +12,14 @@ public class MatchSystem : MonoBehaviour
     public static void playerGetScore()
     {
         scorePlayer++;
+        Debug.Log("Score Player"+scoreAi);
+
         
     }
     public  static void aiGetScore()
     {
         scoreAi++;
-		Debug.Log("Score"+scoreAi);
+		Debug.Log("Score Ai"+scoreAi);
         
     }
 	/// <summary>

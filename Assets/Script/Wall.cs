@@ -8,7 +8,6 @@ public class Wall : MonoBehaviour {
 
 	public void bounce(Rigidbody other){
 			Vector3  temp  = detector.getSpeed();
-			Debug.Log("enter speed"+temp);
 		if(isVertical){
 			temp.x*=-1;			
 			other.velocity=temp;
