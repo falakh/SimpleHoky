@@ -49,16 +49,6 @@ public class Bola : MonoBehaviour
            
            
         }
-		 if (other.gameObject.GetComponent<GawangPlayer>() != null)
-            {
-                MatchSystem.playerGetScore();
-                Debug.Log("Player");
-            }
- 		if (other.gameObject.GetComponent<GawangAi>()!= null)
-            {
-                MatchSystem.aiGetScore();
-				
-            }
-
+		 
     }
 }

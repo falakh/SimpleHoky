@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class GawangAi : MonoBehaviour {
 	
-	// Use this for initialization
+void OnCollisionEnter(Collision other)
+	{
+		if(other.gameObject.GetComponent<Bola>()!=null){
+			MatchSystem.aiGetScore();
+		}
+	}
 	
 }
