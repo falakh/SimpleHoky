@@ -12,25 +12,23 @@ public class MatchSystem : MonoBehaviour
     public static void playerGetScore()
     {
         scorePlayer++;
-        Debug.Log("Score Player"+scoreAi);
 
-        
+
     }
-    public  static void aiGetScore()
+    public static void aiGetScore()
     {
         scoreAi++;
-		Debug.Log("Score Ai"+scoreAi);
-        
-    }
-	/// <summary>
-	/// Update is called every frame, if the MonoBehaviour is enabled.
-	/// </summary>
-	void Update()
-	{
-		aiScoreBoard.text = scoreAi.ToString();
-		playerScoreBoard.text = scorePlayer.ToString();
 
-	}
-	
-   
+    }
+    /// <summary>
+    /// Update is called every frame, if the MonoBehaviour is enabled.
+    /// </summary>
+    void Update()
+    {
+        aiScoreBoard.text = scoreAi.ToString();
+        playerScoreBoard.text = scorePlayer.ToString();
+
+    }
+
+
 }

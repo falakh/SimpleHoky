@@ -32,6 +32,7 @@ public class Bola : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
+        other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f));
 
         if (other.gameObject.GetComponent<Player>() != null)
         {
@@ -40,15 +41,15 @@ public class Bola : MonoBehaviour
         }
         if (other.gameObject.GetComponent<Enemy>() != null)
         {
-			other.gameObject.GetComponent<Enemy>().shoot(gameObject);
+            other.gameObject.GetComponent<Enemy>().shoot(gameObject);
         }
         if (other.gameObject.GetComponent<Wall>() != null)
         {
             Wall hit = other.gameObject.GetComponent<Wall>();
             hit.bounce(rb);
-           
-           
+
+
         }
-		 
+
     }
 }
